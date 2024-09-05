@@ -1,7 +1,9 @@
 # Credit-Risk-Mini-Project
+This project creates a model to predict a person's credit risk, high approximated as bad credit or low approximated by good credit. Using a linear regression model, we were able to predict credit risk 78% with the testing data correctly.   
+
 
 #### Description of Data
-Each entry represents a person who takes a credit by a bank. Each person is classified as good or bad credit risks according to the set of attributes
+Each entry represents a person who takes a credit by a bank. Each person is classified as good or bad credit risk according to the set of attributes
 ##### Features
 1. `Age` (numeric)
 2. `Sex` (text): male, female
