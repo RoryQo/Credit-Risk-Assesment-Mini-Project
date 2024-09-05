@@ -1,6 +1,7 @@
 # Credit-Risk-Mini-Project
 
 #### Description of Data
+Each entry represents a person who takes a credit by a bank. Each person is classified as good or bad credit risks according to the set of attributes
 ##### Features
 1. `Age` (numeric)
 2. `Sex` (text): male, female
