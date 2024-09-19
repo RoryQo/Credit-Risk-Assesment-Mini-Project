@@ -17,11 +17,11 @@ Each entry represents a person who takes a credit by a bank. Each person is clas
 8. `Duration` (of the debt)(numeric, in month)
 9. `Purpose` (of the debt) (text): car, furniture/equipment, radio/TV, domestic appliances, repairs, education, business, vacation/others
 10. `credit_history`: 
- * 0 : delay in paying off in the past       
- * 1 : critical account/other credits elsewhere
- * 2 : no credits taken/all credits paid back duly
- * 3 : existing credits paid back duly till now
- * 4 : all credits at this bank paid back dul
+   * 0 : delay in paying off in the past       
+   * 1 : critical account/other credits elsewhere
+   * 2 : no credits taken/all credits paid back duly
+   * 3 : existing credits paid back duly till now
+   * 4 : all credits at this bank paid back dul
 11. `installment_rate`: Installment rate in percentage of disposable income. 
 1 -'35 or more', 2 - '25 to 35', 3 - '20 to 25', 4 - 'less than 20'
 12. `other_debtors`: Other debtors / guarantors. 1 - 'none', 2 - 'co-applicant', 3 - 'guarantor'
