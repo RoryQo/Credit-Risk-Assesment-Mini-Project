@@ -24,7 +24,7 @@ Each entry represents a person who takes a credit by a bank. Each person is clas
    * 4 : all credits at this bank paid back dul
 11. `installment_rate`: Installment rate in percentage of disposable income. 
 1 -'35 or more', 2 - '25 to 35', 3 - '20 to 25', 4 - 'less than 20'
-12. `other_debtors`: Other debtors / guarantors. 1 - 'none', 2 - 'co-applicant', 3 - 'guarantor'
+12. `other_debtors`: Other debtors/guarantors. 1 - 'none', 2 - 'co-applicant', 3 - 'guarantor'
 13. `number_credit`: Number of existing credits at this bank. 1 - '1', 2 - '2-3', 3 - '4-5', 4 - '6 or more'
 14. `telephone`: 1 - 'no', 2 - 'yes (under customer name)'
 15. `people_liable`: Number of people being liable to provide maintenance for. 1 - '3 or more', 2 - '0 to 2'
