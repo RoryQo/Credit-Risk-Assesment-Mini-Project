@@ -5,7 +5,7 @@ This project creates a model to predict a person's credit risk, high approximate
 
 
 #### Description of Data
-Each entry represents a person who takes a credit by a bank. Each person is classified as a good or bad credit risk according to the set of attributes
+Each entry represents a person who takes a credit from a bank. Each person is classified as a good or bad credit risk according to the set of attributes
 ##### Features
 1. `Age` (numeric)
 2. `Sex` (text): male, female
