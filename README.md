@@ -31,4 +31,4 @@ Each entry represents a person who takes a credit from a bank. Each person is cl
 16. `foreign_worker`: 1 - 'yes', 2 - 'no'
 
 ##### Target
-`Credit_risk` (binary): 0 - bad, 1 - good
+`Credit_risk` (binary): 0 - bad, 1 - good 
