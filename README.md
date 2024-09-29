@@ -1,4 +1,4 @@
-# Credit Risk Analysis Mini Project
+<h1 align="center">Credit Risk Analysis Mini Project</h1>
 
 
 <br>
