@@ -1,35 +1,70 @@
-# Credit-Risk-Mini-Project
+# Credit Risk Analysis Mini Project
 
-#### Results
-This project develops a model to predict a person's credit risk, categorizing individuals as either high risk (bad credit) or low risk (good credit). Utilizing a logistic regression model, we achieved approximately 80% accuracy in predicting credit risk with the testing data. While it may not be the most precise model, its simplicity and reliance on readily available client information make it an effective tool for banks. This model can serve as a preliminary assessment for categorizing customers into high-risk groups, thereby saving time and resources before more detailed credit reports are generated.
+## Overview
+This project aims to analyze credit risk using a dataset containing various customer attributes. The goal is to predict whether a person has good or bad credit risk based on their characteristics, employing logistic regression for classification.
 
+## Results and Conclusion
+This model serves as a valuable tool for banks, enabling them to efficiently assess potential credit risks based on readily available customer information. By identifying high-risk customers early in the process, banks can save time and resources before conducting more detailed evaluations. The model achieved an accuracy of approximately 78% on the test set, with a confusion matrix revealing the performance across different classes of credit risk.
+This project provides a foundational approach to credit risk analysis using logistic regression. Future improvements could include experimenting with more advanced models and feature engineering techniques.
 
+## Table of Contents
+- [Installation](#installation)
+- [Usage](#usage)
+- [Data Description](#data-description)
+- [Data Visualization](#data-visualization)
+- [Data Management](#data-management)
+- [Model Training](#model-training)
 
-#### Description of Data 
-Each entry in the dataset represents an individual applying for credit from a bank, classified as either a good or bad credit risk based on a set of attributes
-##### Features
-1. `Age` (numeric)
-2. `Sex` (text): male, female
-3. `Job` (numeric): 0 - unskilled and non-resident, 1 - unskilled and resident, 2 - skilled,  3 - highly skilled)
-4. `Housing` (text): own, rent, or free
-5. `Saving` (text): little, moderate, quite rich, rich
-6. `Checking` (text): little, moderate, rich
-7. `Credit_amount` (numeric, in DM)
-8. `Duration` (of the debt)(numeric, in month)
-9. `Purpose` (of the debt) (text): car, furniture/equipment, radio/TV, domestic appliances, repairs, education, business, vacation/others
-10. `credit_history`: 
-   * 0 : delay in paying off in the past       
-   * 1 : critical account/other credits elsewhere
-   * 2 : no credits taken/all credits paid back duly
-   * 3 : existing credits paid back duly till now
-   * 4 : all credits at this bank paid back dul
-11. `installment_rate`: Installment rate in percentage of disposable income. 
-1 -'35 or more', 2 - '25 to 35', 3 - '20 to 25', 4 - 'less than 20'
-12. `other_debtors`: Other debtors/guarantors. 1 - 'none', 2 - 'co-applicant', 3 - 'guarantor'
-13. `number_credit`: Number of existing credits at this bank. 1 - '1', 2 - '2-3', 3 - '4-5', 4 - '6 or more'
-14. `telephone`: 1 - 'no', 2 - 'yes (under customer name)'
-15. `people_liable`: Number of people being liable to provide maintenance for. 1 - '3 or more', 2 - '0 to 2'
-16. `foreign_worker`: 1 - 'yes', 2 - 'no'
+## Installation
+To run this project, you will need Python and the following libraries:
+- pandas
+- numpy
+- matplotlib
+- seaborn
+- plotly
+- scikit-learn
 
-##### Target
-`Credit_risk` (binary): 0 - bad, 1 - good 
+## Usage
+1. Clone this repository to your local machine.
+2. Update the file paths in the code to point to your datasets (`credit_s.csv` and `credit_g.csv`).
+3. Run the Python script to execute the analysis.
+
+## Data Description
+Two datasets are utilized in this project:
+
+1. **credit_s.csv**: Contains customer attributes but lacks a target variable for credit risk.
+   - Features include: 
+     - `Age` (numeric)
+     - `Sex` (text): male, female
+     - `Job` (numeric): 0 - unskilled and non-resident, 1 - unskilled and resident, 2 - skilled, 3 - highly skilled
+     - `Housing` (text): own, rent, or free
+     - `Saving` (text): little, moderate, quite rich, rich
+     - `Checking` (text): little, moderate, rich
+     - `Credit_amount` (numeric, in DM)
+     - `Duration` (numeric, in months)
+     - `Purpose` (text): various categories
+
+2. **credit_g.csv**: Contains customer attributes along with the target variable for credit risk.
+   - Key columns after renaming:
+     - `status`: Credit risk status (1 for good, 2 for bad)
+     - `Duration`: Duration of the credit
+     - `Credit_amount`: Amount of credit
+     - `Credit_risk`: Target variable
+
+## Data Visualization
+The following visualizations are created to understand the dataset better:
+- **Pie chart** for `Credit_risk`
+- **Histogram** for `Age`
+- **Boxplot** comparing `Age` distributions by `Credit_risk`
+- **Bar plot** comparing `Credit_risk` across different `Sex` groups
+- **Scatterplot** showing the relationship between `Age` and `Credit_amount` colored by `Credit_risk`
+
+## Data Management
+- Summary statistics for key features are calculated.
+- Missing values are handled by encoding them as a new category: "Unknown."
+- Categorical variables are converted to dummy variables.
+
+## Model Training
+A logistic regression model is trained using the processed dataset:
+- The data is split into training and testing sets, reserving 20% for testing.
+- Cross-validation is used to find the optimal model parameters.
