@@ -2,6 +2,7 @@
 
 
 <br>
+
 ## Overview
 This project aims to analyze credit risk using a dataset containing various customer attributes. The goal is to predict whether a person has good or bad credit risk based on their characteristics, employing logistic regression for classification.
 
