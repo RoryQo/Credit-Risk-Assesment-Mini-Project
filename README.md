@@ -1,11 +1,12 @@
 # Credit-Risk-Mini-Project
 
 #### Results
-This project creates a model to predict a person's credit risk, high approximated as bad credit or low approximated by good credit. Using a logistic regression model, we could predict credit risk 80% with the testing data correctly. While not the most accurate model, it is a quick and simple model, using readily available information from a client, because of this, the model would be best implemented as a litmus test for bank branches when sorting customers into high-risk groups for financial services, saving bank and client time when discussing potential client services, before a time intensive credit report is pulled.   
+This project develops a model to predict a person's credit risk, categorizing individuals as either high risk (bad credit) or low risk (good credit). Utilizing a logistic regression model, we achieved approximately 80% accuracy in predicting credit risk with the testing data. While it may not be the most precise model, its simplicity and reliance on readily available client information make it an effective tool for banks. This model can serve as a preliminary assessment for categorizing customers into high-risk groups, thereby saving time and resources before more detailed credit reports are generated.
+
 
 
 #### Description of Data 
-Each entry represents a person who takes a credit from a bank. Each person is classified as a good or bad credit risk according to the set of attributes
+Each entry in the dataset represents an individual applying for credit from a bank, classified as either a good or bad credit risk based on a set of attributes
 ##### Features
 1. `Age` (numeric)
 2. `Sex` (text): male, female
