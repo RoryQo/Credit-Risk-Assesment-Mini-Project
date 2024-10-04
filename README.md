@@ -48,13 +48,14 @@ The following visualizations are created to understand the dataset better:
 - **Boxplot** comparing `Age` distributions by `Credit_risk`
 - **Bar plot** comparing `Credit_risk` across different `Sex` groups
 - **Scatterplot** showing the relationship between `Age` and `Credit_amount` colored by `Credit_risk`
-<div style="display: flex; justify-content: space-between;">
+<div style="display: flex; justify-content: space-around; align-items: center;">
+  
+  <img src="https://github.com/RoryQo/Credit-Risk-Assesment-Mini-Project/blob/main/Graph2.jpg?raw=true" alt="Credit Risk Assessment Graph 2" width="300" style="transition: transform 0.2s; cursor: pointer; margin: 10px;" onmouseover="this.style.transform='scale(1.25)'" onmouseout="this.style.transform='scale(1)'"/>
 
-  <img src="https://github.com/RoryQo/Credit-Risk-Assesment-Mini-Project/blob/main/Graph2.jpg?raw=true" alt="Credit Risk Assessment Graph 2" width="300" style="transition: transform 0.2s; cursor: pointer;" onmouseover="this.style.transform='scale(1.25)'" onmouseout="this.style.transform='scale(1)'"/>
-
-  <img src="https://github.com/RoryQo/Credit-Risk-Assesment-Mini-Project/blob/main/Graph1.jpg?raw=true" alt="Credit Risk Assessment Graph 1" width="600" style="transition: transform 0.2s; cursor: pointer;" onmouseover="this.style.transform='scale(1.25)'" onmouseout="this.style.transform='scale(1)'"/>
+  <img src="https://github.com/RoryQo/Credit-Risk-Assesment-Mini-Project/blob/main/Graph1.jpg?raw=true" alt="Credit Risk Assessment Graph 1" width="600" style="transition: transform 0.2s; cursor: pointer; margin: 10px;" onmouseover="this.style.transform='scale(1.25)'" onmouseout="this.style.transform='scale(1)'"/>
 
 </div>
+
 ## Data Management
 - Summary statistics for key features are calculated.
 - Missing values are handled by encoding them as a new category: "Unknown."
