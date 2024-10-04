@@ -11,26 +11,13 @@ This model serves as a valuable tool for banks, enabling them to efficiently ass
 This project provides a foundational approach to credit risk analysis using logistic regression. Future improvements could include experimenting with more advanced models and feature engineering techniques.
 
 ## Table of Contents
-- [Installation](#installation)
-- [Usage](#usage)
 - [Data Description](#data-description)
 - [Data Visualization](#data-visualization)
 - [Data Management](#data-management)
 - [Model Training](#model-training)
+- [Installation](#installation)
+- [Usage](#usage)
 
-## Installation
-To run this project, you will need Python and the following libraries:
-- pandas
-- numpy
-- matplotlib
-- seaborn
-- plotly
-- scikit-learn
-
-## Usage
-1. Clone this repository to your local machine.
-2. Update the file paths in the code to point to your datasets (`credit_s.csv` and `credit_g.csv`).
-3. Run the Python script to execute the analysis.
 
 ## Data Description
 Two datasets are utilized in this project:
@@ -69,5 +56,30 @@ The following visualizations are created to understand the dataset better:
 
 ## Model Training
 A logistic regression model is trained using the processed dataset:
+
 - The data is split into training and testing sets, reserving 20% for testing.
+```
+X_train, X_test, y_train, y_test = train_test_split(features_standardized, target, random_state=99,test_size=0.2 )
+```
 - Cross-validation is used to find the optimal model parameters.
+```
+logistic_regression = LogisticRegressionCV(cv=5,solver='lbfgs', 
+                                    multi_class='multinomial', penalty='l2', 
+                                           Cs=20, random_state=100, n_jobs=-1)
+```
+
+## Installation
+To run this project, you will need Python and the following libraries:
+- pandas
+- numpy
+- matplotlib
+- seaborn
+- plotly
+- scikit-learn
+
+## Usage
+1. Clone this repository to your local machine.
+2. Update the file paths in the code to point to your datasets (`credit_s.csv` and `credit_g.csv`).
+3. Run the Python script to execute the analysis.
+
+
